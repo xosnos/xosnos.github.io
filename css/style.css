@@ -1,22 +1,40 @@
+* {
+  /* border: 1px solid red; */
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
 body {
+  /* background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png'); */
+  background: url("/img/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   /* font-family: Roboto, sans-serif; */
   font-family: 'Trebuchet MS', sans-serif;
-  background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
-  
+  color: #ffffff;
+}
+
+.bg-primary {
+  --bs-bg-opacity: .9
+}
+
+.bg-dark {
+  --bs-bg-opacity: .6
 }
 
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url("/img/background.jpg");
   background-size: cover;
-  color: #ffffff;
-  height: 400px;
+  height: 100rem;
 }
 
-h1 {
-  font-weight: 700;
-  margin: 0;
+h2 {
+  text-align: center;
+  padding: 5rem;
 }
 
 /* Profile Image */
