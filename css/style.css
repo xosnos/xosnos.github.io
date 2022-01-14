@@ -17,8 +17,8 @@ body {
   color: #ffffff;
 }
 
-.bg-primary {
-  --bs-bg-opacity: .9
+nav.bg-dark {
+  --bs-bg-opacity: 1
 }
 
 .bg-dark {
