@@ -4,6 +4,7 @@
   <!-- Meta -->
   <title>Steven Nguyen</title>
   <meta charset="utf-8" name="author" content="Steven Nguyen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
@@ -15,28 +16,26 @@
   <meta name="msapplication-config" content="img/icon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <!-- CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <!-- JavaScript -->
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ce646cd9b2.js" crossorigin="anonymous" defer></script>
   <script src="js/script.js" defer></script>
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="500">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+  <div id="home"></div>
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#intro">Steven Nguyen</a>
+      <a class="navbar-brand" href="#home">Steven Nguyen</a>
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a id="homeButton" class="nav-link active" aria-current="page" href="#intro">🏠 Home</a>
+            <a id="homeButton" class="nav-link active" aria-current="page" href="#home">🏠 Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">👦🏻 About</a>
@@ -61,26 +60,44 @@
       </div>
     </div>
   </nav>
-  <section id="intro" class="jumbotron">
+  <section class="jumbotron">
     <div class="container">
       <div class="row">
-        <h1><i class="fas fa-hand-sparkles"></i> Hello Universe, Steven here!</h1>
-        <p>"Success is not final, failure is not fatal; it is the courage to continue that counts." - <em>Winston Churchill</em></p>
+        <div id="heading" class="col-12 col-lg-6">
+          <h1>
+            <i class="fas fa-hand-sparkles"></i> Hello Universe, Steven here!
+          </h1>
+          <p>I like writing lines of code, spearheading projects, mentoring students, traveling to new cities, and trying new food/hobbies.</p>
+      </div>
+      <div id="profile" class="col-12 col-lg-6">
+        <img src="img/profile.jpg" alt="Profile Picture">
       </div>
     </div>
   </section>
   <section id="about" class="container bg-dark">
     <div class="row">
       <div class="col">
-        <h2>About</h2>
+        <h2>About Me</h2>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-sm-6">
-        <img src="img/profile.jpg" alt="Profile Picture" width="50">
-        <p>Hi there! I am a student currently studying Computer Science B.S.E. at the University of Michigan. I love everything about technology and have always been interested in messing and modifying software, whether that is in my career or on my free time. I plan on becoming a Software Engineer or Full-Stack Engineer in the coming years.</p>
+        <h3>Quick Introduction</h3>
+        <p>I'm a senior from the University of Michigan College of Engineering in Ann Arbor graduating this December 2022 with a B.S.E. in Computer Science. I'm highly interested in building applications to assist people in their daily lives. I have a strong technical background in software engineering, full-stack web development, and mobile application development.</p>
       </div>
     </div>
+    <!-- <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <h3>Origin Story</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-6">
+        <h3>When I'm Not Working</h3>
+        <p></p>
+      </div>
+    </div> -->
   </section>
   <section id="education" class="container bg-dark">
     <div class="row">
@@ -89,22 +106,55 @@
       </div>
     </div>
     <div class="row">
-      <div class ="col-md-6">
-        <p class="font-weight-bold">East Kentwood High School</p>
-        <img class="portrait" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Ekhs.jpg">
+      <div class="col-lg-6">
+        <h3>University of Michigan (2018-2022)</h3>
+        <img class="portrait" src="https://www.engin.umich.edu/wp-content/uploads/2021/03/Header_Placeholder_academics.jpg">
+        <h4>Relevant Courses</h4>
         <ul>
-          <li>Business Professionals of America Competition: C++ State Chamption in 2018</li>
-          <li>Favorite class: AP Computer Science</li>
-          <li>Started coding my senior year</li>
+          <li>EECS 481: Software Engineering</li>
+          <li>EECS 497: Human-Centered Software Design and Development</li>
+          <li>EECS 441: Mobile App Development for Entrepreneurs</li>
+          <li>EECS 493: User Interface Development</li>
+          <li>EECS 482: Operating Systems</li>
+          <li>EECS 485: Web Systems</li>
+          <li>EECS 388: Computer Security</li>
+          <li>EECS 281: Data Structures & Algorithms</li>
+        </ul>
+        <h4>Activities</h4>
+        <ul>
+          <li>HackBlue</li>
+          <li>Vietnamese Student Association</li>
+          <li>Michigan Hackers</li>
+        </ul>
+        <h4>Awards</h4>
+        <ul>
+          <li>HAIL Scholarship</li>
+          <li>University Honors</li>
+          <li>Dean's List</li>
         </ul>
       </div>
-      <div class ="col-md-6">
-        <p class="font-weight-bold">University of Michigan College of Engineering</p>
-        <img class="portrait" src="https://www.engin.umich.edu/wp-content/uploads/2021/03/Header_Placeholder_academics.jpg">
+      <div class ="col-lg-6">
+        <h3>East Kentwood High School (2014-2018)</h3>
+        <img class="portrait" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Ekhs.jpg">
+        <h4>Relevant Courses</h4>
         <ul>
-          <li>University of Michigan Hail Scholarship Recipient</li>
-          <li>A member of Michigan Hackers, HackBlue, and Vietnamese Student Association</li>
+          <li>AP Computer Science</li>
+          <li>AP Statistics</li>
         </ul>
+        <h4>Activities</h4>
+        <ul>
+          <li>National Honor Society</li>
+          <li>National Art Honors Society</li>
+          <li>Symphony Orchestra</li>
+          <li>Junior Varsity Tennis</li>
+        </ul>
+        <h4>Awards</h4>
+        <ul>
+          <li>National Qualifier & State Champion in C++ Programming in 2018</li>
+          <li>AP Scholar with Distinction</li>
+          <li>Bosch and Society of Automotive Engineers Scholarship</li>
+        </ul>
+        </div>
       </div>
     </div>
   </section>
