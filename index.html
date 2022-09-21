@@ -1,237 +1,278 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
+
 <head>
-  <!-- Meta -->
-  <title>Steven Nguyen</title>
-  <meta charset="utf-8" name="author" content="Steven Nguyen">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <!-- Icon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-  <link rel="manifest" href="img/icon/site.webmanifest">
-  <link rel="mask-icon" href="img/icon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="img/icon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="img/icon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <!-- CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link href="css/style.css" type="text/css" rel="stylesheet">
-  <!-- JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/ce646cd9b2.js" crossorigin="anonymous" defer></script>
-  <script src="js/script.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Steven Nguyen</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/img/icon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/img/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
-  <div id="home"></div>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#home">Steven Nguyen</a>
-      <div class="collapse navbar-collapse" id="navbarToggler">
-        <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a id="homeButton" class="nav-link active" aria-current="page" href="#home">🏠 Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">👦🏻 About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">🎓 Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#experience">👨🏻‍💻 Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#projects">💻 Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#contact">📞 Contact</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
-    </div>
-  </nav>
-  <section class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div id="heading" class="col-12 col-lg-6">
-          <h1>
-            <i class="fas fa-hand-sparkles"></i> Hello Universe, Steven here!
-          </h1>
-          <p>I like writing lines of code, spearheading projects, mentoring students, traveling to new cities, and trying new food/hobbies.</p>
-      </div>
-      <div id="profile" class="col-12 col-lg-6">
-        <img src="img/profile.jpg" alt="Profile Picture">
-      </div>
-    </div>
-  </section>
-  <section id="about" class="container bg-dark">
-    <div class="row">
-      <div class="col">
-        <h2>About Me</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-6">
-        <h3>Quick Introduction</h3>
-        <p>I'm a senior from the University of Michigan College of Engineering in Ann Arbor graduating this December 2022 with a B.S.E. in Computer Science. I'm highly interested in building applications to assist people in their daily lives. I have a strong technical background in software engineering, full-stack web development, and mobile application development.</p>
-      </div>
-    </div>
-    <!-- <div class="row justify-content-center">
-      <div class="col-sm-6">
-        <h3>Origin Story</h3>
-        <p></p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-6">
-        <h3>When I'm Not Working</h3>
-        <p></p>
-      </div>
-    </div> -->
-  </section>
-  <section id="education" class="container bg-dark">
-    <div class="row">
-      <div class="col">
-        <h2>Education</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6">
-        <h3>University of Michigan (2018-2022)</h3>
-        <img class="portrait" src="https://www.engin.umich.edu/wp-content/uploads/2021/03/Header_Placeholder_academics.jpg">
-        <h4>Relevant Courses</h4>
-        <ul>
-          <li>EECS 481: Software Engineering</li>
-          <li>EECS 497: Human-Centered Software Design and Development</li>
-          <li>EECS 441: Mobile App Development for Entrepreneurs</li>
-          <li>EECS 493: User Interface Development</li>
-          <li>EECS 482: Operating Systems</li>
-          <li>EECS 485: Web Systems</li>
-          <li>EECS 388: Computer Security</li>
-          <li>EECS 281: Data Structures & Algorithms</li>
-        </ul>
-        <h4>Activities</h4>
-        <ul>
-          <li>HackBlue</li>
-          <li>Vietnamese Student Association</li>
-          <li>Michigan Hackers</li>
-        </ul>
-        <h4>Awards</h4>
-        <ul>
-          <li>HAIL Scholarship</li>
-          <li>University Honors</li>
-          <li>Dean's List</li>
-        </ul>
-      </div>
-      <div class ="col-lg-6">
-        <h3>East Kentwood High School (2014-2018)</h3>
-        <img class="portrait" src="https://upload.wikimedia.org/wikipedia/commons/1/12/Ekhs.jpg">
-        <h4>Relevant Courses</h4>
-        <ul>
-          <li>AP Computer Science</li>
-          <li>AP Statistics</li>
-        </ul>
-        <h4>Activities</h4>
-        <ul>
-          <li>National Honor Society</li>
-          <li>National Art Honors Society</li>
-          <li>Symphony Orchestra</li>
-          <li>Junior Varsity Tennis</li>
-        </ul>
-        <h4>Awards</h4>
-        <ul>
-          <li>National Qualifier & State Champion in C++ Programming in 2018</li>
-          <li>AP Scholar with Distinction</li>
-          <li>Bosch and Society of Automotive Engineers Scholarship</li>
-        </ul>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="72">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">xosnos</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+    <header class="text-center text-white bg-primary masthead">
+        <div class="container"><img class="rounded-circle img-fluid d-block mx-auto mb-5" src="assets/img/profile.jpg" width="256px">
+            <h1>Steven Nguyen</h1>
+            <hr class="star-light">
+            <h2 class="font-weight-light mb-0">Software Engineer</h2>
+        </div>
+    </header>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-1" data-bs-toggle="modal">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/Almond%20Travel.png">
+                    </a></div>
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-2" data-bs-toggle="modal">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/RANGR.png">
+                    </a></div>
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-3" data-bs-toggle="modal">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/jammming.png">
+                    </a></div>
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-4" data-bs-toggle="modal">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/parstagram.png">
+                    </a></div>
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-5" data-bs-toggle="modal">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/flixster.png">
+                    </a></div>
+                <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-6" data-bs-toggle="modal">
+                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                            <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
+                        </div><img class="img-fluid" src="assets/img/portfolio/xosnos.png">
+                    </a></div>
+            </div>
+        </div>
+    </section>
+    <section class="text-white bg-primary mb-0" id="about">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-white">About</h2>
+            <hr class="star-light mb-5">
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">I'm a senior from the University of Michigan College of Engineering in Ann Arbor graduating this December 2022 with a B.S.E. in Computer Science.&nbsp;</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">I'm highly interested in building applications to assist people in their daily lives. I have a strong technical background in software engineering, full-stack web development, and mobile application development.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4"></div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <div class="control-group">
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="text" id="name" required="" placeholder="Name"><label class="form-label">Name</label><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><label class="form-label">Email Address</label><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="mb-0 form-floating controls pb-2"><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><label class="form-label">Phone Number</label><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div class="control-group">
+                            <div class="mb-5 form-floating controls pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" style="height: 150px;"></textarea><label class="form-label">Message</label><small class="form-text text-danger help-block"></small></div>
+                        </div>
+                        <div id="success"></div>
+                        <div><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p>Grand Rapids, Michigan</p>
+                </div>
+                <div class="col-md-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase">Around the Web</h4>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://github.com/xosnos/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 512 512" width="1em" height="1em" fill="currentColor" class="fa-fw">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://www.linkedin.com/in/xosnos/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fa-fw">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://twitter.com/xosnos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fa-fw">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                </svg></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-light text-center btn-social rounded-circle" role="button" href="https://xosnos.medium.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -64 640 640" width="1em" height="1em" fill="currentColor" class="fa-fw">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"></path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase mb-4">Credit where credit's due</h4>
+                    <p class="lead mb-0"><span>Codecademy, Bootstrap Studio, Freelance Theme, Font Awesome, and especially my Mac Mini 💙&nbsp;</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="text-center text-white copyright py-4">
+        <div class="container"><small>Copyright © xosnos 2022</small></div>
     </div>
-  </section>
-  <!-- <section id="experience" class="container bg-dark">
-    <div class="row">
-      <div class="col">
-        <h2>Experience</h2>
-      </div>
+    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="text-center d-block rounded text-white" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Almond Travel</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/Almond%20Travel.png">
+                                <p class="mb-5">Almond Travel is a website that makes traveling to America easier for tourists and immigrants. The process of going on a trip involves multiple steps, all of which require different apps and websites. Users must book flights on one platform, hotels on another, and information about restaurants and attractions involves painstaking research across multiple web sources. This project aims to bundle these steps into a seamless experience that is accessible and understandable for users of a variety of national origins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-6 col-md-3">
-        <h5>Python</h5>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg">
-        <ul>
-          <li>Proficient</li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3">
-        <h5>C++</h5>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg">
-        <ul>
-          <li>Proficient</li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3">
-        <h5>Java</h5>
-        <img src="https://content.codecademy.com/projects/personal_portfolio/java.jpg">
-        <ul>
-          <li>Intermediate</li>
-        </ul>
-      </div>
-      <div class="col-6 col-md-3">
-        <h5>JavaScript</h5>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">
-        <ul>
-          <li>Intermediate</li>
-        </ul>
-      </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">RANGR</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/RANGR.png">
+                                <p class="mb-5">RANGR is a mobile golf swing tracker that uses computer vision to analyze ball movements to provide metrics and insights. It’s as simple as set, swing, track! Developed by EECS 441's ACE development team.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
     </div>
-  </section> -->
-  <!-- <section id="projects" class="container bg-dark">
-    <div class="row">
-      <div class="col">
-        <h2>Projects</h2>
-      </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">jammming</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/jammming.png">
+                                <p class="mb-5">jammming is a front-end application to create super duper fast playlists and send them directly to your Spotify account.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <p>
-        This website itself is a project I am working on. I'm a newbie to web development so I have experience with only HTML and CSS. I am currently mastering JavaScript, React.js, Node.js, and SQL (or the bigger term: Fullstack Development)
-      </p>
-      <p>
-        Another project I have is a Twitter Client iOS Application that I started in my CodePath course. You can find it <a href="https://github.com/xosnos/twitter" target="_blank">here</a>
-      </p>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Parstagram</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/parstagram.png">
+                                <p class="mb-5">An Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
     </div>
-  </section> -->
-  <!-- <section id="contact" class="container bg-dark">
-    <h2>Contact</h2>
-  </section> -->
-  <footer class="container bg-dark">
-    <div class="row">
-      <p class="col-lg-2">&copy; 2022 Steven Nguyen</p>
-      <div class="col-lg-2">
-        <a href="https://www.linkedin.com/in/xosnos" target="_blank">LinkedIn</a>
-      </div>
-      <div class="col-lg-2">
-        <a href="https://github.com/xosnos" target="_blank">GitHub</a>
-      </div>
-      <div class="col-lg-2">
-        <a href="https://www.codecademy.com/profiles/xosnos" target="_blank">Codecademy</a>
-      </div>
-      <div class="col-lg-2">
-        <a href="https://xosnos.medium.com/" target="_blank">Medium</a>
-      </div>
-      <div class="col-lg-2">
-        <a href="https://twitter.com/xosnos" target="_blank">Twitter</a>
-      </div>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">Flix</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/flixster.png">
+                                <p class="mb-5">Flix is a Flixster clone mobile app that allows users to browse movies from the The Movie Database API.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
     </div>
-  </footer>
+    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <h2 class="text-uppercase text-secondary mb-0">TBA</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/xosnos.png">
+                                <p class="mb-5">TBA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-bs-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
